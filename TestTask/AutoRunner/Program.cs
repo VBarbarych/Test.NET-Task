@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using Task1;
 using Task2;
+using Task3;
 
 namespace AutoRunner
 {
@@ -13,6 +14,7 @@ namespace AutoRunner
             List<IRunnable> tasks = new List<IRunnable>();
             tasks.Add(new Sorting());
             tasks.Add(new Search());
+            tasks.Add(new Palindrome());
             
 
             foreach (var task in tasks)
