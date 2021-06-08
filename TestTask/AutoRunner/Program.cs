@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
+using System.Collections.Generic;
+using Task1;
 
 namespace AutoRunner
 {
@@ -6,7 +9,17 @@ namespace AutoRunner
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<IRunnable> tasks = new List<IRunnable>();
+            tasks.Add(new Sorting());
+            
+
+            foreach (var task in tasks)
+            {
+                task.Run();
+            }
+
+
+            Console.ReadKey();
         }
     }
 }
