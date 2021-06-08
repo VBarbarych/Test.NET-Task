@@ -27,6 +27,7 @@ namespace Task1
         public void Run()
         {
             Console.WriteLine("==========Task1==========\n");
+            Console.Write("Merge two sorted arrays: ");
             int[] SortedArray = SortArray(new int[] { 2, 4, 8, 34 }, new int[] { 2, 5, 6, 8, 12, 42, 54 });
             foreach(var i in SortedArray)
                 Console.Write(i + " ");

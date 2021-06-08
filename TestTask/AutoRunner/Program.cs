@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using Task1;
+using Task2;
 
 namespace AutoRunner
 {
@@ -11,6 +12,7 @@ namespace AutoRunner
         {
             List<IRunnable> tasks = new List<IRunnable>();
             tasks.Add(new Sorting());
+            tasks.Add(new Search());
             
 
             foreach (var task in tasks)
